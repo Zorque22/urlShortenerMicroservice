@@ -15,7 +15,7 @@ app.get('/new/:url', function(req,res){
     var response;
     if(checkUrlExists==-1){
       urls.push(longUrl);
-      response = '<p>Original url: '+longUrl+'</p><p>Short url: <a href="http://'+longUrl+'">'+String(urls.length-1)+'</a></p>'
+      response = '<p>Original url: '+longUrl+'</p><p>Short url: <a href="http://'+longUrl+'">zorque-short-url.herokuapp.com/'+String(urls.length-1)+'</a></p>'
       } else {
         response = '<p>Original url: '+longUrl+'</p><p>Short url: <a href="http://'+longUrl+'">'+checkUrlExists+'</a></p>'
       }
